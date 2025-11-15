@@ -1,0 +1,24 @@
+# Git
+.git
+.gitignore
+
+# Claude
+.claude/
+
+# Documentation
+README.md
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Screenshots
+screenshots/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
