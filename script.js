@@ -155,3 +155,21 @@ window.addEventListener('scroll', () => {
 
     lastScroll = currentScroll;
 });
+
+// Lazy Load Vimeo Player (only load when user clicks)
+function loadVimeoPlayer() {
+    const container = document.getElementById('vimeo-player-container');
+    const facade = document.getElementById('video-facade');
+
+    // Create iframe element
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://player.vimeo.com/video/1032937964?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0&autoplay=1#t=00h00m02s';
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('title', 'Data Search Console - Video Presentación');
+
+    // Remove facade and add iframe
+    facade.remove();
+    container.appendChild(iframe);
+}

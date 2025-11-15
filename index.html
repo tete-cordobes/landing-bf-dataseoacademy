@@ -37,14 +37,20 @@
             </h2>
 
             <!-- Video Section -->
-            <div class="video-container">
-                <iframe
-                    src="https://player.vimeo.com/video/1032937964?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0#t=00h00m02s"
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    title="Data Search Console - Video Presentación">
-                </iframe>
+            <div class="video-container" id="vimeo-player-container">
+                <div class="video-facade" id="video-facade" onclick="loadVimeoPlayer()">
+                    <img
+                        src="https://vumbnail.com/1032937964.jpg"
+                        alt="Video presentación Data Search Console"
+                        width="640"
+                        height="360">
+                    <div class="play-button">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="40" fill="rgba(0,0,0,0.7)"/>
+                            <path d="M32 25L55 40L32 55V25Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
 
             <h2 class="hero-description">
@@ -96,7 +102,7 @@
                         </div>
                     </div>
                     <div class="testimonial-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Foto_Antonio.jpeg" alt="Antonio Maculus" width="400" height="400">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Foto_Antonio.jpeg" alt="Antonio Maculus" width="400" height="400" loading="lazy">
                     </div>
                 </div>
 
@@ -201,7 +207,7 @@
                         </div>
                     </div>
                     <div class="testimonial-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/gustavo-bellavigna.jpeg" alt="Gustavo Bellavigna" width="400" height="400">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/gustavo-bellavigna.jpeg" alt="Gustavo Bellavigna" width="400" height="400" loading="lazy">
                     </div>
                 </div>
 
@@ -338,7 +344,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/chuck-penalver.jpeg" alt="Chuck Peñalver">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/chuck-penalver.jpeg" alt="Chuck Peñalver" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Tardé entre 4 y 5 meses en terminar la academia. Ya puedo ver un código leerlo, editarlo y moldearlo a lo que necesito."</p>
                     <div class="testimonial-compact-author">
@@ -349,7 +355,7 @@
 
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/matias-santander.jpeg" alt="Matías Santander">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/matias-santander.jpeg" alt="Matías Santander" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"La pérdida de información que tenía es brutal. Ahora armo mis propias soluciones y facilito el trabajo para el resto del equipo"</p>
                     <div class="testimonial-compact-author">
@@ -366,15 +372,15 @@
         <div class="container">
             <h2 class="section-title">Las empresas que confían en nosotros...</h2>
             <div class="companies-grid">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/logo-crea-150x150.png" alt="Crea">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Adops-150x150.png" alt="Adops">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Bancolombia-150x150.png" alt="Bancolombia">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/adipa-150x136.png" alt="Adipa">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/globant-150x150.png" alt="Globant">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Iprospect-150x150.png" alt="Iprospect">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/nomadic-150x150.png" alt="Nomadic">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/seotronix-150x150.png" alt="Seotronix">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Sinvello-150x150.png" alt="Sinvello">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/logo-crea-150x150.png" alt="Crea" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Adops-150x150.png" alt="Adops" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Bancolombia-150x150.png" alt="Bancolombia" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/adipa-150x136.png" alt="Adipa" width="150" height="136">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/globant-150x150.png" alt="Globant" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Iprospect-150x150.png" alt="Iprospect" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/nomadic-150x150.png" alt="Nomadic" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/seotronix-150x150.png" alt="Seotronix" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Sinvello-150x150.png" alt="Sinvello" width="150" height="150">
             </div>
         </div>
     </section>
@@ -383,7 +389,7 @@
     <section class="course-presentation">
         <div class="container">
             <h1 class="presentation-title">Presentamos<br><strong>Data Search Console</strong></h1>
-            <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console" class="course-image">
+            <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console" class="course-image" width="800" height="600" loading="lazy">
             <p class="course-description">Data Search Console es el <strong>primer programa de automatización y análisis de datos de todo el mundo</strong> <strong>enfocado en SEO y Search Console</strong> para ayudar a los especialistas de la industria a <u>automatizar tareas repetitivas, incrementar su tráfico y dejar de depender de equipos o herramientas externas.</u></p>
             <p class="course-audience">Está diseñado para SEOs experimentados y además… Para <strong>técnicos, estratégicos, de nicho, local</strong>, <strong>founders</strong>, <strong>managers, copywriters,</strong> y cualquier especialistas que tenga un conocimiento mínimo en SEO.</p>
         </div>
@@ -395,7 +401,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/gilarte.jpeg" alt="José Gilarte">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/gilarte.jpeg" alt="José Gilarte" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Gente que no tenga nivel técnico puede perfectamente iniciar la formación y llegar a aprender la metodología."</p>
                     <div class="testimonial-compact-author">
@@ -406,7 +412,7 @@
 
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/seba-torres.jpeg" alt="Sebastian Torres">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/seba-torres.jpeg" alt="Sebastian Torres" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Gracias a Data SEO Academy, aprendí no solo a automatizar procesos, sino también a repensar problemas y construir soluciones estratégicas. La comunidad y el apoyo constante de Alan y otros colegas hicieron toda la diferencia. Este curso cambió mi forma de trabajar y pensar, llevándome a otro nivel en SEO."</p>
                     <div class="testimonial-compact-author">
@@ -647,7 +653,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/facundo-zupel.jpeg" alt="Facundo Zupel">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/facundo-zupel.jpeg" alt="Facundo Zupel" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Entre 25 a 30 horas podía tomarme hacer un keyword research y analizar los datos de Google Search Console. Hoy logré reducirlo a aproximadamente 1 hora pudiendo hacer más foco en mis clientes."</p>
                     <div class="testimonial-compact-author">
@@ -827,7 +833,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/fer-matallo.jpeg" alt="Fernando Matallo">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/fer-matallo.jpeg" alt="Fernando Matallo" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Gracias a este curso, logré automatizar procesos, optimizar contenidos estratégicos y mejorar posiciones clave en Google, como llevar un producto de la tercera página a la primera. Aprendí a pensar estratégicamente y a desarrollar soluciones técnicas como scripts y análisis avanzados de datos."</p>
                     <div class="testimonial-compact-author">
@@ -1013,7 +1019,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/joseluisma.jpeg" alt="José Luis Marín">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/joseluisma.jpeg" alt="José Luis Marín" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"A mí lo que me ha cambiado es mi manera de pensar, mi manera de actuar. Lo que más utilizo e la base de datos de GSC para poder armar mis propias herramientas."</p>
                     <div class="testimonial-compact-author">
@@ -1086,7 +1092,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2025/10/Fedra.jpeg" alt="Fedra Abagianos">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2025/10/Fedra.jpeg" alt="Fedra Abagianos" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Fue como si me hubieran destapado los ojos y se me abrió un mundo que dije, ¡ah! Es esto. Una de las cosas que más valoro es que me dio la posibilidad de entender que yo puedo hacer mis propias herramientas. Por lo tanto, me da independencia."</p>
                     <div class="testimonial-compact-author">
@@ -1306,15 +1312,15 @@
         <div class="container">
             <h2 class="section-title">Las empresas que confían en nosotros...</h2>
             <div class="companies-grid">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/logo-crea-150x150.png" alt="Crea">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Adops-150x150.png" alt="Adops">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Bancolombia-150x150.png" alt="Bancolombia">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/adipa-150x136.png" alt="Adipa">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/globant-150x150.png" alt="Globant">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Iprospect-150x150.png" alt="Iprospect">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/nomadic-150x150.png" alt="Nomadic">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/seotronix-150x150.png" alt="Seotronix">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Sinvello-150x150.png" alt="Sinvello">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/logo-crea-150x150.png" alt="Crea" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Adops-150x150.png" alt="Adops" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Bancolombia-150x150.png" alt="Bancolombia" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/adipa-150x136.png" alt="Adipa" width="150" height="136">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/globant-150x150.png" alt="Globant" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Iprospect-150x150.png" alt="Iprospect" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/nomadic-150x150.png" alt="Nomadic" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/seotronix-150x150.png" alt="Seotronix" width="150" height="150">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Sinvello-150x150.png" alt="Sinvello" width="150" height="150">
             </div>
         </div>
     </section>
@@ -1325,7 +1331,7 @@
             <div class="testimonials-compact-grid">
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2025/10/Andreina.jpeg" alt="Andreina Rincon">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2025/10/Andreina.jpeg" alt="Andreina Rincon" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Dejé de ver solo errores masivos y empecé a enfocarme en los que realmente afectan al tráfico y las ventas"</p>
                     <div class="testimonial-compact-author">
@@ -1336,7 +1342,7 @@
 
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Foto_Antonio.jpeg" alt="Antonio Maculus">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Foto_Antonio.jpeg" alt="Antonio Maculus" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Gracias a la API de Search Console, encuentro nuevas oportunidades de posicionamiento para todos mis clientes"</p>
                     <div class="testimonial-compact-author">
@@ -1347,7 +1353,7 @@
 
                 <div class="testimonial-compact">
                     <div class="testimonial-compact-image">
-                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/gustavo-bellavigna.jpeg" alt="Gustavo Bellavigna">
+                        <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/gustavo-bellavigna.jpeg" alt="Gustavo Bellavigna" width="400" height="400" loading="lazy">
                     </div>
                     <p class="testimonial-compact-text">"Antes copiaba y pegaba scripts sin entender, ahora los creo desde cero. Gané velocidad en la ejecución e independencia de otros equipos."</p>
                     <div class="testimonial-compact-author">
@@ -1437,7 +1443,7 @@
                 <p>Hace algunos años, cuando comenzamos a explorar la conexión entre el <strong>SEO</strong> y el <strong>análisis de datos</strong>, notamos una gran oportunidad: no existía un programa integral que enseñara cómo utilizar los datos para transformar esta profesión. Por eso decidimos crearlo nosotros. Hoy, más de <strong>300 alumnos</strong> ya pasaron por nuestra academia, formándose junto a un equipo que combina experiencia técnica en <strong>Python, BigQuery y automatización</strong>, con una profunda comprensión del <strong>SEO moderno</strong>, para convertir los datos en estrategias reales de crecimiento.</p>
             </div>
             <div class="why-learn-image">
-                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console" class="course-image">
+                <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console" class="course-image" width="800" height="600" loading="lazy">
             </div>
         </div>
     </section>
@@ -1448,7 +1454,7 @@
             <div class="pricing-grid">
                 <!-- Basic Plan -->
                 <div class="pricing-card">
-                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console">
+                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console" width="800" height="600" loading="lazy">
                     <h3><u>Data Search Console</u></h3>
                     <div class="pricing-badge">
                         <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-23-a-las-4.40.04%E2%80%AFp.-m.png" alt="Comparativa planes" width="334" height="84">
@@ -1494,7 +1500,7 @@
 
                 <!-- Advanced Plan -->
                 <div class="pricing-card featured">
-                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.50%E2%80%AFa.-m.png" alt="Automatización, IA & análisis de datos para SEO">
+                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.50%E2%80%AFa.-m.png" alt="Automatización, IA & análisis de datos para SEO" width="800" height="600" loading="lazy">
                     <h3><u>Automatización, IA & análisis de datos para SEO</u></h3>
                     <div class="pricing-badge">
                         <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-23-a-las-4.40.04%E2%80%AFp.-m.png" alt="Comparativa planes" width="334" height="84">
@@ -1634,7 +1640,7 @@
             <div class="pricing-grid">
                 <!-- Basic Plan -->
                 <div class="pricing-card">
-                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console">
+                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.32%E2%80%AFa.-m.png" alt="Data Search Console" width="800" height="600" loading="lazy">
                     <h3><u>Data Search Console</u></h3>
                     <div class="pricing-badge">
                         <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-23-a-las-4.40.04%E2%80%AFp.-m.png" alt="Comparativa planes" width="334" height="84">
@@ -1680,7 +1686,7 @@
 
                 <!-- Advanced Plan -->
                 <div class="pricing-card featured">
-                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.50%E2%80%AFa.-m.png" alt="Automatización, IA & análisis de datos para SEO">
+                    <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-24-a-las-4.06.50%E2%80%AFa.-m.png" alt="Automatización, IA & análisis de datos para SEO" width="800" height="600" loading="lazy">
                     <h3><u>Automatización, IA & análisis de datos para SEO</u></h3>
                     <div class="pricing-badge">
                         <img src="https://dataseoacademy.com/wp-content/uploads/2024/11/Captura-de-pantalla-2024-11-23-a-las-4.40.04%E2%80%AFp.-m.png" alt="Comparativa planes" width="334" height="84">
