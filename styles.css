@@ -1404,6 +1404,20 @@ body {
     border-left: 4px solid var(--primary-color);
 }
 
+.thing-item-image {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.thing-item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+}
+
 .thing-item h3 {
     color: var(--secondary-color);
     font-size: 1.5rem;
