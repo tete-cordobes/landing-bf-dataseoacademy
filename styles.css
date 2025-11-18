@@ -1907,10 +1907,16 @@ body {
     .cta-button {
         width: 100%;
         max-width: 100%;
-        padding: 1rem 1rem;
-        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem;
         text-align: center;
         box-sizing: border-box;
+        white-space: normal;
+        line-height: 1.4;
+        min-height: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .section-title {
