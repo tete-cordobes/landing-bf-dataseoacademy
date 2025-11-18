@@ -458,9 +458,12 @@ body {
 
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .problem-item {
@@ -1042,9 +1045,8 @@ body {
 .includes li {
     padding: 0.5rem 0;
     font-size: 1rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
+    display: block;
+    line-height: 1.6;
     transition: all 0.2s;
 }
 
@@ -1649,22 +1651,29 @@ body {
 
 .bonus-item h4 {
     color: var(--primary-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .bonus-item h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .bonus-meta {
     font-size: 0.95rem;
     color: var(--text-light);
     margin-bottom: 20px;
+}
+
+.bonus-item p {
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 
 .bonus-item ul {
@@ -1675,6 +1684,8 @@ body {
 .bonus-item li {
     margin-bottom: 12px;
     line-height: 1.8;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 
 /* Why Learn Section */
@@ -1880,6 +1891,10 @@ body {
 
     .presentation-title {
         font-size: 2rem;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
     }
 
     /* Compact testimonials responsive */
