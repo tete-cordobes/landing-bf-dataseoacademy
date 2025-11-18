@@ -1835,6 +1835,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -1884,6 +1892,25 @@ body {
     .nav {
         justify-content: center;
         width: 100%;
+        gap: 15px;
+    }
+
+    .header-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 180px;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        box-sizing: border-box;
     }
 
     .section-title {
