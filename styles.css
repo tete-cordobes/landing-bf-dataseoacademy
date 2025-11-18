@@ -1406,14 +1406,21 @@ body {
 
 .thing-item-image {
     width: 100%;
+    max-height: 350px;
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-light);
 }
 
 .thing-item-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 350px;
+    object-fit: contain;
     display: block;
     border-radius: var(--radius);
 }
